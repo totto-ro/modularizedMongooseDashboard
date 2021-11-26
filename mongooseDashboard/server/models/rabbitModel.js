@@ -47,7 +47,7 @@ const RabbitModel = {
         return Rabbit.updateOne( { _id : id }, newRabbit );
     },
     destroy : function( id ){
-        return Rabbit.remove({ _id : id });
+        return Rabbit.deleteOne({ _id : id });
     }
 };
 
